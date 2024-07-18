@@ -1,0 +1,148 @@
+1
+00:00:00,000 --> 00:00:07,980
+ As you probably have noticed, I put up here on my shared screen the part of the webpage.
+
+2
+00:00:08,820 --> 00:00:10,720
+ Most of the class is driven from the schedule.
+
+3
+00:00:11,460 --> 00:00:12,940
+ I'll talk a little bit later about it.
+
+4
+00:00:13,540 --> 00:00:17,040
+ But, you know, hopefully you find the URL and you found the schedule.
+
+5
+00:00:19,480 --> 00:00:22,280
+ I'll return to that a little bit later in more detail.
+
+6
+00:00:24,480 --> 00:00:24,720
+ Okay.
+
+7
+00:00:25,380 --> 00:00:26,520
+ So what's the plan for today?
+
+8
+00:00:30,000 --> 00:00:32,920
+ So I'm going to talk a little bit about what is a distributed system.
+
+9
+00:00:34,320 --> 00:00:35,120
+ So what is it?
+
+10
+00:00:36,640 --> 00:00:44,940
+ And maybe give a little bit of historical context, you know, how distributed systems have developed over the last couple decades.
+
+11
+00:00:48,040 --> 00:00:51,980
+ Then hit a little bit on the core structure, like what you should expect.
+
+12
+00:00:57,640 --> 00:00:58,580
+ Then talk.
+
+13
+00:00:59,120 --> 00:00:59,800
+ What are the main.
+
+14
+00:01:00,000 --> 00:01:03,360
+ Topics or the main recurring topics that we'll see throughout the term.
+
+15
+00:01:05,500 --> 00:01:09,940
+ And then we'll see actually first illustration of those main topics by the case study.
+
+16
+00:01:11,660 --> 00:01:16,440
+ That was assigned for today, the paper MapReduce, which is also the topic of the first lap.
+
+17
+00:01:16,820 --> 00:01:26,380
+ And you watch the Piazza, you know, we just posted that to the lab on Piazza URL so that you can get going.
+
+18
+00:01:26,940 --> 00:01:28,560
+ And it's due next Friday.
+
+19
+00:01:30,000 --> 00:01:31,940
+ So let's start with the basics.
+
+20
+00:01:32,040 --> 00:01:35,120
+ I'll talk a little bit about what is a distributed system.
+
+21
+00:01:45,420 --> 00:01:48,200
+ And sort of, you know, maybe easy to start with a little picture.
+
+22
+00:01:49,400 --> 00:01:50,580
+ The internet, the cloud.
+
+23
+00:01:53,860 --> 00:01:54,200
+ Yeah.
+
+24
+00:01:54,200 --> 00:01:58,200
+ We have computers connected to clients and maybe servers.
+
+25
+00:01:59,240 --> 00:01:59,800
+ Maybe you have servers.
+
+26
+00:01:59,800 --> 00:02:01,680
+ You have servers that actually are complete data centers.
+
+27
+00:02:09,600 --> 00:02:10,320
+ Clients.
+
+28
+00:02:12,200 --> 00:02:17,940
+ And data centers themselves, you know, may be internally distributed systems that are connected by internal networks.
+
+29
+00:02:18,960 --> 00:02:23,600
+ The data centers themselves might be internal connections, you know, outside of the internet.
+
+30
+00:02:25,220 --> 00:02:28,200
+ But there's a large collection of computers connected by networks.
+
+31
+00:02:28,520 --> 00:02:29,820
+ And, you know, sort of, you know, you can see that there's a lot of data centers that are connected by networks.
+
+32
+00:02:29,820 --> 00:02:37,880
+ And, you know, sort of, informally, you know, the way I think about it, what a distributed system is, that there's a multiple, you know, more than one computer network.
+
+33
+00:02:38,680 --> 00:02:42,080
+ You know, so they can interact only through, you know, sending or receiving packets.
+
+34
+00:02:43,280 --> 00:02:46,460
+ As opposed to, say, a multiprocessor where you can interact through shared memory.
+
+35
+00:02:46,980 --> 00:02:49,460
+ And they're cooperating, you know, to deliver some service.
+
+36
+00:02:53,540 --> 00:02:58,860
+ So those are sort of the four keywords, you know, that define, you know, for me.
+
+37
+00:02:58,960 --> 00:02:59,560
+ Distributed systems.
+
